@@ -4,7 +4,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /p5/,
+            test: [/node_modules\/p5/, /node_modules\\p5/],
             use: loaders.null()
           }
         ]
